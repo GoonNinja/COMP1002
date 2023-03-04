@@ -1,0 +1,268 @@
+body{
+    background-color: #44330fd7;
+    margin: 0px;
+    display: flexbox;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family:'Mynerve', cursive;
+}
+
+p,a,li{
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 150px;
+}
+
+.sitename{
+    font-family:'Mynerve', cursive;
+    font-size: 2.7em;
+    margin: 0;
+    padding-right: 350px ;
+    color: #0e0e0e;
+}
+
+header div{
+    flex-grow: 1;
+    height: 150px;
+}
+
+header div img{
+    height: 100%;
+    width: auto;
+}
+
+header nav menu{
+    display: flex;
+    list-style: none;
+}
+
+header nav menu li{
+   padding: 0px 15px;
+}
+
+header nav menu li a{
+    color: #f4f4f4;
+    font-size: 2em;
+ }
+
+ header nav menu li a:hover{
+    color: #0e0e0e;
+}
+
+ .masthead{
+    height: auto;
+    width: auto;
+    background-image: url(../img/PizzaOven.jpg);
+    background-size: cover;
+ }
+
+ .masthead div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50%;
+    width: 100%;
+ }
+
+ .masthead h1{
+    align-items: center;
+    justify-content: center;
+    color: #f4f4f4;
+    font-size: 7em;
+ }
+ 
+ .prices{
+   display: flex;
+   gap: 1rem;
+ }
+
+ .Walk-In{
+    color: #f4f4f4;
+    font-size: 1.5em;
+    padding-left: 100px;
+    margin: 0px;
+ }
+
+ .Delivery{
+    color: #f4f4f4;
+    font-size: 1.5em;
+    padding-right: 500px;
+    margin: 0px;
+ }
+
+ .sp{
+    display: flex;
+    font-size: 2.4em;
+    align-items: center;
+    padding-left: 800px;
+    padding-top: 50px;
+    font-family:'Mynerve', cursive;
+    color: #0e0e0e;
+ }
+ 
+ .specialty-pizza{
+    display: flex;
+    gap: 1rem;
+    margin-left: 80px;
+    padding-top: 30px;
+    width: 1000px;
+ }
+
+ .specialty-hawaiian div img{
+    width: 400px;
+    height: auto;
+    border: 10px solid black;
+ }
+
+ .specialty-hawaiian div p{
+    padding-bottom: 20px;
+ }
+ 
+ .specialty-meatlovers div img{
+    width: 400px;
+    height: auto;
+    border: 10px solid black;
+ }
+
+ .specialty-meatlovers div p{
+    padding: 0px;
+ }
+
+ .specialty-veggie div img{
+    width: 400px;
+    height: 267px;
+    border: 10px solid black;
+ }
+
+ .specialty-veggie div p{
+  padding: 0px;
+ }
+
+ .specialty-pepperoni div img{
+    width: 400px;
+    height: auto;
+    border: 10px solid black;
+ }
+
+ .specialty-pepperoni div p{
+    padding-bottom: 20px;
+ }
+
+ .options{
+    display: flex;
+    padding: 0;
+
+ }
+
+ .options input[type = 'number']{
+    width: 35px;
+    height: 30px;
+ }
+
+.pizzatoppings{
+    display: flex;
+    margin: 0px;
+    padding-top: 40px;
+    padding-left: 450px;
+    gap: 1rem;
+}
+
+.bp{
+    display: flex;
+    font-size: 2.4em;
+    align-items: center;
+    padding-left: 800px;
+    padding-top: 100px;
+    font-family:'Mynerve', cursive;
+    color: #0e0e0e;
+ }
+
+ .di{
+   display: flex;
+   font-size: 2.4em;
+   align-items: center;
+   padding-left: 800px;
+   padding-top: 100px;
+   font-family:'Mynerve', cursive;
+   color: #0e0e0e;
+ }
+
+ .info{
+   display: flex;
+   padding-left: 480px;
+   padding-bottom: 100px;
+ }
+
+ .info div form{
+   border: 1px solid black;
+   padding: 20px;
+ }
+
+.pm{
+   display: flex;
+   font-size: 2.4em;
+   align-items: center;
+   padding-left: 800px;
+   padding-top: 100px;
+   font-family:'Mynerve', cursive;
+   color: #0e0e0e;
+}
+
+.payment{
+   display: flex;
+}
+
+.payment ul{
+   padding-left: 900px;
+   padding-bottom: 100px;
+}
+
+footer{
+    display: flex;
+    background-color: #0e0e0e;
+    color: #f4f4f4;
+    align-items: center;
+}
+
+footer p{
+   color: white;
+   font-size: 1.5em;
+   font-family:'Mynerve', cursive;
+}
+
+footer form{
+    padding-top: 200px;
+}
+
+
+/* at this point our inspect element tool in our browser will become our best friend. Now to make our mobile adjustments. 
+The most common "breakpoints" are 320px, 480px, 600px, 768px, 900px, 1024px, and 1200px. 
+Now these breakpoints will depend on what the design looks like, but it is always important to check these breakpoints and there are multiple ways that we can approach them. 
+For our lesson we are going to look at some examples on all the different ways we can make our changes as our screen gets smaller. 
+Now let's go to our browser and open our inspect element tool. */
+/* can be used if I want to make it responsive later on*/
+@media screen and (min-width: 1440px) {
+  
+}
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+   
+}
+
+@media screen and (max-width: 620px) {  
+    
+}
+
+@media  screen and (max-width: 545px) {
+
+}

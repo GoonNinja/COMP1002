@@ -1,0 +1,359 @@
+<!--
+//Adam Miszkiewicz 200547405
+//COMP1002 Assignment 2
+//Pizza Order Form
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="Pizza Order Form" content="Creating a pizza order form with css styling">
+    <title>Adam's Pizzeria</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Mynerve&family=Roboto:ital@1&display=swap" rel="stylesheet">
+    <!--CSS-->
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+
+        <!--top nav bar that has the logo and links-->
+        <div>
+            <a href="index.html"><img src="./img/Logo1.png" alt="LOGO"></a>
+        </div>  
+
+        <p class="sitename">Adam's Pizzeria</p>
+
+        <nav>
+            <menu>
+                <li><a href="#">Order Online</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Coupons</a></li>
+                <li><a href="#">Tracker</a></li>
+                <li><a href="#">Rewards</a></li>
+                <li><a href="#">Support</a></li>
+            </menu>
+        </nav>
+    </header>
+
+    <!--shows a photo and displays prices-->
+    <section class="masthead">
+        <div>
+            <h1>Fresh Wood Fired Pizza</h1>
+        </div>
+
+        <div class="prices">
+
+            <div class="Walk-In">
+                <h3>Prices Walk-In</h3>
+                <ul>
+                    <li><p>Large- $16</p></li>
+                    <li><p>Medium- $12</p></li>
+                    <li><p>Small- $8</p></li>
+                </ul>
+               </div>
+    
+               <div class="Delivery">
+                <h3>Prices Delivery</h3>
+                <ul>
+                    <li><p>Large- $20</p></li>
+                    <li><p>Medium- $16</p></li>
+                    <li><p>Small- $12</p></li>
+                </ul>
+               </div>
+        </div>
+    </section>
+
+    <!--Main body for the site-->
+    <main>
+
+        <!--Section 1 specialty pizzas-->
+        <p class="sp">Specialty Pizzas</p>
+        <section class="specialty-pizza">
+
+            <div class="specialty-hawaiian">
+                <h3>Hawaiian</h3>
+                <div>
+                    <img src="./img/HawaiianPizza.jpg" alt="hawaiian pizza">
+                    <p>Pizza Sauce, Mozarella Cheese, Pineapple, Ham</p>
+                </div>
+
+                <div class="options">
+                    <h3>Size</h3>
+                    <input type="checkbox" name="Large" id="Large">
+                    <label for="Large">Large</label>
+                    <input type="checkbox" name="Medium" id="Medium">
+                    <label for="Large">Medium</label>
+                    <input type="checkbox" name="Small" id="Small">
+                    <label for="Large">Small</label>
+                    <h3>Quantity</h3>
+                    <input type="number" name="quantity" id="quantity">
+                </div>
+            </div>
+
+            <div class="specialty-meatlovers">
+               <h3>Meat Lovers</h3>
+                <div>
+                    <img src="./img/MeatLoversPizza.jpg" alt="meatlovers pizza">
+                    <p> Pizza Sauce, Mozarella Cheese, Pepperoni, Ham, Sausage</p>
+                </div>
+
+                <div class="options">
+                    <h3>Size</h3>
+                    <input type="checkbox" name="Large" id="Large2">
+                    <label for="Large">Large</label>
+                    <input type="checkbox" name="Medium" id="Medium2">
+                    <label for="Large">Medium</label>
+                    <input type="checkbox" name="Small" id="Small2">
+                    <label for="Large">Small</label>
+                    <h3>Quantity</h3>
+                    <input type="number" name="quantity" id="quantity2">
+                </div>
+            </div>
+
+            <div class="specialty-veggie">
+               <h3>Veggie</h3>
+                <div>
+                    <img src="./img/VeggiePizza.jpg" alt="veggie pizza">
+                    <p>Pizza Sauce, Mozarella Cheese, Balsamic Vinegar, Red Pepper, Arugula, Tomato</p>
+                </div>
+
+                <div class="options">
+                    <h3>Size</h3>
+                    <input type="checkbox" name="Large" id="Large3">
+                    <label for="Large">Large</label>
+                    <input type="checkbox" name="Medium" id="Medium3">
+                    <label for="Large">Medium</label>
+                    <input type="checkbox" name="Small" id="Small3">
+                    <label for="Large">Small</label>
+                    <h3>Quantity</h3>
+                    <input type="number" name="quantity" id="quantity3">
+                </div>
+            </div>
+
+            <div class="specialty-pepperoni">
+               <h3>Pepperoni</h3>
+                <div>
+                    <img src="./img/PepperoniPizza.jpg" alt="pepperoni pizza">
+                    <p>Pizza Sauce, Mozarella Cheese, Pepperoni</p>
+                </div>
+                
+                <div class="options">
+                    <h3>Size</h3>
+                    <input type="checkbox" name="Large" id="Large4">
+                    <label for="Large">Large</label>
+                    <input type="checkbox" name="Medium" id="Medium4">
+                    <label for="Large">Medium</label>
+                    <input type="checkbox" name="Small" id="Small4">
+                    <label for="Large">Small</label>
+                    <h3>Quantity</h3>
+                    <input type="number" name="quantity" id="quantity4">
+                </div>
+            </div>
+        </section>
+
+        <p class="bp">Build Your Own Pizza</p>
+        <!--Build your own pizza-->   
+        <section class="pizzatoppings">
+
+            <div class="buildpizza">
+                    <h3>Size</h3>
+                    <input type="checkbox" name="Large" id="Large5">
+                    <label for="Large">Large</label>
+                    <input type="checkbox" name="Medium" id="Medium5">
+                    <label for="Large">Medium</label>
+                    <input type="checkbox" name="Small" id="Small5">
+                    <label for="Large">Small</label>
+                    <h3>Quantity</h3>
+                    <input type="number" name="quantity" id="quantity5">
+            </div>
+
+            <div class="meats">
+                <h3>Meats</h3>
+                <ul>
+                  <li>
+                    <input type="checkbox" name="toppings" value="pepperoni" id="toppings-pepperoni">
+                    <label for="toppings-pepperoni">Pepperoni</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="sausage" id="toppings-sausage">
+                    <label for="toppings-sausage">Sausage</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="ham" id="toppings-ham">
+                    <label for="toppings-ham">Ham</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="bacon" id="toppings-bacon">
+                    <label for="toppings-bacon">Bacon</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="meatballs" id="toppings-meatballs">
+                    <label for="toppings-meatballs">Meatballs</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="chicken" id="toppings-chicken">
+                    <label for="toppings-chicken">Chicken</label>
+                  </li>
+                </ul>
+            </div>
+
+            <div class="cheeses">
+                <h3>Cheeses</h3>
+                <ul>
+                 <li>
+                    <input type="checkbox" name="toppings" value="mozzarella" id="toppings-mozzarella">
+                    <label for="toppings-mozzarella">Mozzarella Cheese</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="cheddar" id="toppings-cheddar">
+                    <label for="toppings-cheddar">Cheddar Cheese</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="mixed" id="toppings-mixed">
+                    <label for="toppings-mixed">Mixed Cheeses</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="provolone" id="toppings-provolone">
+                    <label for="toppings-provolone">Provolone Cheese</label>
+                 </li>
+                </ul>
+            </div>
+
+            <div class="veggies">
+                <h3>Veggies</h3>
+                <ul>
+                 <li>
+                    <input type="checkbox" name="toppings" value="mushrooms" id="toppings-mushrooms">
+                    <label for="toppings-mushrooms">Mushrooms</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="red-pepper" id="toppings-red-pepper">
+                    <label for="toppings-red-pepper">Red Pepper</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="green-pepper" id="toppings-green-pepper">
+                    <label for="toppings-green-pepper">Green Pepper</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="pineapple" id="toppings-pineapple">
+                    <label for="toppings-pineapple">Pineapple</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="arugula" id="toppings-arugula">
+                    <label for="toppings-arugula">Arugula</label>
+                 </li>
+                  <li>
+                    <input type="checkbox" name="toppings" value="red-onion" id="toppings-red-onion">
+                    <label for="toppings-red-onion">Red Onion</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="jalapeno" id="toppings-jalapeno">
+                    <label for="toppings-jalapeno">Jalapeno</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="toppings" value="olives" id="toppings-olives">
+                    <label for="toppings-olives">Olives</label>
+                 </li>
+                </ul>
+            </div>
+
+            <div class="sauces">
+                <h3>Sauces</h3>
+                <ul>
+                 <li>
+                    <input type="checkbox" name="sauces" value="pizza" id="sauces-pizza">
+                    <label for="sauces-pizza">Pizza Sauce</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="sauces" value="ranch" id="sauces-ranch">
+                    <label for="sauces-ranch">Ranch Sauce</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="sauces" value="marinara" id="sauces-marinara">
+                    <label for="sauces-marinara">Marinara Sauce</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="sauces" value="bbq" id="sauces-bbq">
+                    <label for="sauces-bbq">BBQ Sauce</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="sauces" value="alfredo" id="sauces-alfredo">
+                    <label for="sauces-alfredo">Alfredo Sauce</label>
+                 </li>
+                </ul>
+           </div>
+        </section>
+        
+        <p class="di">Delivery Information</p>
+        <!--info form-->
+        <section class="info">
+            <div>
+                <form method="post" action="somephpfile1.php">
+              
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" required>
+
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+              
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </form>
+            </div>
+        </section>
+
+        <p class="pm">Payment Method</p>
+        <!--payment info-->
+        <section>
+            <div class="payment">
+                <ul>
+                 <li>
+                    <input type="checkbox" name="debit/visa" value="payment" id="debit/visa">
+                    <label for="debit/visa">Debit / Visa</label>
+                 </li>
+                 <li>
+                    <input type="checkbox" name="sauces" value="payment" id="cash">
+                    <label for="cash">Cash</label>
+                 </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!--Bottom of the page contact form -->
+    <footer>
+        <div>
+            <a href="index.html"><img src="./img/Logo1.png" alt="logo"></a>
+        </div>
+
+        <p> Thanks for visiting. Questions or concerns can be submitted below</p>
+
+        <div class="contact">
+            <form method="post" action="somephpfile.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+              
+                <label for="email">Email:</label>
+                <input type="email" id="email2" name="email" required>
+              
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+              
+                <button type="submit">Submit</button>
+              </form>
+        </div>
+    </footer> 
+  </body>
+</html>
